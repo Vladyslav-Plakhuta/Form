@@ -1,0 +1,286 @@
+.page {
+  background-color: #f2f2f2;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.app {
+  max-width: 840px;
+  margin: 100px auto;
+  box-sizing: border-box;
+  -moz-box-shadow: 0px 1px 5px rgb(100,100,100);
+  -webkit-box-shadow: 0px 1px5px rgb(100,100,100);
+  box-shadow: 0px 1px 5px rgb(100,100,100);
+}
+
+.app-header {
+  position: relative;
+  height: 85px;
+  border-top: 2px solid red;
+  background-color: #ffffff;
+
+  &:after {
+    position: absolute;
+    top: 8px;
+    right: 13px;
+    display: block;
+    content: "\00d7";
+    font-size: 26px;
+    font-weight: bold;
+    color: #d9d9d9;
+  }
+
+  &__heading {
+    font-size: 31px;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+.app-body {
+  display: flex;
+  height: 250px;
+  background-color:  #f2f2f2;
+  padding: 40px 60px;
+}
+
+.social {
+
+  &__link {
+    display: block;
+  }
+
+  &__fb-button {
+    width: 300px;
+    height: 40px;
+    background-color: #3b5998;
+    border-radius: 3px;
+    border: 0px;
+    margin-bottom: 20px;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  &__fb-logo {
+    width: 10px;
+    height: auto;
+    vertical-align: middle;
+    margin-left: 10px;
+  }
+
+  &__goo-button {
+    width: 300px;
+    height: 40px;
+    background-color: #d34836;
+    border-radius: 3px;
+    border: 0px;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  &__goo-logo {
+    width: 20px;
+    height: auto;
+    vertical-align: middle;
+    margin-left: 10px;
+  }
+
+  &__fb-text {
+    display: inline;
+    color: #ffffff;
+    opacity: 0.9;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    vertical-align: middle;
+    margin-left: 65px;
+  }
+
+  &__goo-text {
+    display: inline;
+    color: #ffffff;
+    opacity: 0.9;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    vertical-align: middle;
+    margin-left: 57px;
+  }
+}
+.divider-v {
+  border-left: 1px solid #d9d9d9;
+  background-color:#d9d9d9;
+  height: 245px;
+  margin-top: 0px;
+}
+
+.form {
+
+  &__titles {
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 2px;
+    margin-bottom: 7px;
+  }
+
+  &__input {
+    width: 295px;
+    height: 35px;
+    margin-bottom: 19px;
+    font-size: 18px;
+  }
+
+  &__checkbox {
+    margin-left: 0px;
+    margin-right: 0px;
+    vertical-align: middle;
+  }
+
+  &__checkbox-title {
+    display: inline;
+    font-size: 14px;
+    font-weight: bold;
+    vertical-align: middle;
+  }
+
+  &__login-button {
+    width: 104px;
+    height: 40px;
+    background-color: black;
+    border-radius: 3px;
+    border: 0px;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+
+  &__help-title {
+    float: right;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+
+  &__help-link {
+    color: inherit;
+  }
+}
+
+.app-footer {
+  display: flex;
+  background-color: #ffffff;
+  height: 85px;
+  justify-content: center;
+  align-items: center;
+
+  &__query {
+    font-size: 18px;
+    color: #999999;
+  }
+
+  &__signup {
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: underline;
+    margin-left: 6px;
+  }
+}
+
+.divider-h{
+  display: none;
+}
+
+@media only screen and (max-width: 830px) {
+  .app-body {
+    padding: 20px 30px;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .app {
+    max-width: 400px;
+  }
+
+  .app-header {
+    margin: auto;
+  }
+
+  .app-body {
+    flex-wrap: wrap-reverse;
+    height: 430px;
+    padding: 10px 0px;
+  }
+
+  .divider {
+    display: block;
+    width: 300px;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: auto;
+    padding: 0;
+  }
+
+  .form {
+    margin: auto;
+  }
+
+  .social {
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 342px) {
+  .app-header {
+
+    &:after {
+      top: 2px;
+      right: 7px;
+    }
+
+    &__heading {
+      font-size: 9vw;
+    }
+  }
+
+  .form__input {
+    width: 250px;
+    height: 34px;
+  }
+
+  .social {
+
+    &__fb-button {
+      width: 250px;
+      height: 40px;
+    }
+
+    &__goo-button {
+    width: 250px;
+    height: 40px;
+    }
+
+    &__fb-text {
+      margin-left: 35px;
+    }
+
+    &__goo-text {
+      margin-left: 25px;
+    }
+  }
+
+  .app-footer {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__query {
+      margin: 0px;
+    }
+
+    &__signup {
+      margin: 0px;
+    }
+  }
+}

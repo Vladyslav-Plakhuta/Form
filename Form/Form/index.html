@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="./styles/style.css">
+  <title>app</title>
+</head>
+
+<body class="page">
+  <section class="app">
+    <div class="app-header">
+      <h1 class="app-header__heading">Log in to the Site</h1>
+    </div>
+    <div class="app-body">
+      <div class="social">
+        <a class="social__link" href="default.asp" target="_blank">
+          <button class="social__fb-button">
+            <img class="social__fb-logo" src="./images/Facebook.png">
+            <p class="social__fb-text">Log in with Facebook</p>
+          </button>
+        </a>
+        <a class="social__link" href="default.asp" target="_blank">
+          <button class="social__goo-button">
+            <img class="social__goo-logo" src="./images/Google.png">
+            <p class="social__goo-text">Log in with Google+</p>
+          </button>
+        </a>
+      </div>
+      <hr class="divider">
+      <form class="form">
+        <p class="form__titles">Login</p>
+        <input class="form__input" type="text">
+        <p class="form__titles">Password</p>
+        <input class="form__input" type="password">
+        <div class="form__checkbox-block">
+          <input class="form__checkbox" type="checkbox">
+          <p class="form__checkbox-title">Remember me</p>
+        </div>
+        <a class="form__login-link">
+          <button class="form__login-button" onclick="validate()">Log in</button>
+        </a>
+        <p class="form__help-title">
+          <a class="form__help-link" href="default.asp" target="_blank">
+            Need help logging in?
+          </a>
+        </p>
+      </form>
+    </div>
+    <div class="app-footer">
+      <p class="app-footer__query">Dont have an account yet?</p>
+      <p class="app-footer__signup">Sign up</p>
+    </div>
+  </section>
+  <script src="index.js"></script>
+</body>
+
+</html>
